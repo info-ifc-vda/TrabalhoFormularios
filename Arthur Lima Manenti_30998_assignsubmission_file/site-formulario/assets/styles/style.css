@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-btn-dark-mode: #fff;
+    --color-text-btn-dark-mode: #000;
+    --color-text: #fff;
+    --bg-body: url(../images/dark.jpeg);
+    --bg-form: #1c1f2b;
+}
+
+
+.dark-mode-botao {
+    --bg-btn-dark-mode: #000;
+    --color-text-btn-dark-mode: #fff;
+    --color-text: #000;
+    --bg-body: #fff;
+    --bg-form: #fff;
+}
+
+body {
+    background-image: var(--bg-body);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Poppins;
+    
+}
+
+nav {
+width: 100%;
+height: 3rem;
+background-color: rgba(150, 150, 150, 0.5);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+nav a {
+    margin: 0 3rem;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+#dark-mode-botao{
+    padding: 5px 20px;
+    background-color: var(--bg-btn-dark-mode);
+    color: var(--color-text-btn-dark-mode);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+    color: var(--color-text);
+    padding: 0 400px;
+}
+
+header h1{
+    font-size: 50px;
+    letter-spacing: 0.5rem;
+}
+
+header p {
+    font-size: 14px;
+    
+}
+
+main{
+    height: calc(100vh - 7rem);
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin: 0 auto;
+    padding: 2em 3rem;
+    width: 400px;
+    background: var(--bg-form);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 15px;
+    gap: 0.5rem;
+}
+
+
+.form-group label{
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+.form-group input{
+    border: none;
+    padding: 0.2rem 0.5rem;
+    outline: 0;
+    background-color: #fff;
+}
+
+input[type='submit']{
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 0;
+    margin-top:15px ;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+form::after,
+form::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+form::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variáveis*/
+
+:root {
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --link-color:#333;
+    --btn-bg-color:#ffffff;
+    --btn-text-color:rgb(0, 0, 0);
+    --btn-bg-color-hover:#444;
+    --form-bg:#e2e2e2;
+    --input-bg: #ebebeb;
+    --bg-color-logo: white;
+
+    
+
+}
+.dark-mode {
+    --text-color: #f4f4f4;
+    --background-color: #333;
+    --link-color:#ffffff;
+    --btn-bg-color:#313131;
+    --btn-text-color:rgb(255, 255, 255);
+    --btn-bg-color-hover:#555555;
+    --form-bg:#000;
+    --input-bg: #000000;
+    --bg-color-logo: #444;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+nav{
+    background-color: var(--nav-background-color);
+    color: var(--link-color);
+    padding: 16px;
+    overflow: hidden;
+    background-image: url(images/tipos-de-graos-de-cafe.jpg);
+}
+
+nav a.logo{
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--link-color);
+    background-color: var(--bg-color-logo);
+    padding: 3px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#dark-mode-botao:hover{
+    background-color: var(--btn-bg-color-hover);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+fieldset{
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea
+{
+    width: 100%;    
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"]{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--btn-bg-color-hover);
+}
+.radio-option,
+.checkbox-option{
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+ .radio-option label,
+ .checkbox-option label{
+    display: inline;
+    vertical-align: middle;
+ }

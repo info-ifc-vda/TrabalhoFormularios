@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Avaliação - Restaurante La Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+    <div class="container">
+
+        <header>
+            <div class="header-content">
+                <h1>Avaliação do La Table</h1>
+                <p class="subtitle">Sua opinião é muito importante para nós!</p>
+            </div>
+        </header>
+
+        <form id="surveyForm">
+            <div class="form-section">
+                <label for="name">Nome (obrigatório):</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="form-section">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+            </div>
+
+            <div class="form-section">
+                <p>Você recomendaria o restaurante?</p>
+                <label><input type="radio" name="recommend" value="Sim" required> Sim</label>
+                <label><input type="radio" name="recommend" value="Não"> Não</label>
+            </div>
+
+            <div class="form-section">
+                <label for="rating">Avaliação geral do restaurante:</label>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1" required> 1 estrela</label>
+                    <label><input type="radio" name="rating" value="2"> 2 estrelas</label>
+                    <label><input type="radio" name="rating" value="3"> 3 estrelas</label>
+                    <label><input type="radio" name="rating" value="4"> 4 estrelas</label>
+                    <label><input type="radio" name="rating" value="5"> 5 estrelas</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="suggestions">Sugestões:</label>
+                <input type="text" id="suggestions" name="suggestions" placeholder="Quais sugestões você tem?">
+            </div>
+
+            <div class="form-section">
+                <label for="comments">Comentários:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Compartilhe seus pensamentos..."></textarea>
+            </div>
+
+            <div class="form-section">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+
+        <div class="theme-toggle">
+            <button id="themeToggle">Alternar Tema</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

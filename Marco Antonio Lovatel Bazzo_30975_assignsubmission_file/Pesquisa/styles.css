@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Londrina+Sketch&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-img: url(xadrezground.jpg);
+    --nav-bg-color: darkgreen;
+    --form-bg: rgba(182, 182, 182, 0.87);
+    --input-bg: rgba(243, 242, 242, 0.918);
+    --link-color: white;
+    --btn-bg-color: rgb(0, 53, 0);
+    --btn-text-color: white;
+}
+
+.dark-mode {
+    --bg-img: url(xadrezgroundescuro.png);
+    --nav-bg-color: rgb(0, 31, 0);
+    --form-bg: rgba(182, 182, 182, 0.7);
+    --input-bg: rgba(255, 255, 255, 0.911);
+    --link-color: white;
+    --btn-bg-color: rgb(0, 70, 0);
+}
+
+body {
+    background-image: var(--bg-img);
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    color: var(--link-color);
+    padding: 16px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+nav a.logo {
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 20px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    vertical-align: middle;
+
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 25px;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.radio-option, .checkbox-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+.radio-option label, .checkbox-option label {
+    display: inline;
+    vertical-align: middle;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

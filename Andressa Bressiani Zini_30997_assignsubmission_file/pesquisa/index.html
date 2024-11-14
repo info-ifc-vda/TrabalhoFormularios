@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Bruan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Bruan</a>
+        <a id="dark-mode-botao">Dark/Light</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Avaliações ao café Bruan</legend>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" required placeholder="Informe seu Nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="nome">E-mail: </label>
+                    <input type="email" name="email" id="email" required placeholder="Informe seu E-mail" />
+                </div>
+
+                <div class="form-group">
+                    <label for="nome">Telefone: </label>
+                    <input type="tel" name="tel" id="tel" required placeholder="Ex.: 12 34567-8901" />
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Café gelado ou quente: </label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione a opção</option>
+                        <option value="gelado">Gelado</option>
+                        <option value="quente">Quente</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sabor">Sabor preferido: </label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input 
+                            type="radio" 
+                            id="caramelo"
+                            name="sabor"
+                            value="c"
+                            required 
+                             />
+                            <label for="caramelo">Caramelo.</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input
+                             type="radio"
+                             id="canela" 
+                             name="sabor"
+                             value="ca"
+                             required
+                             checked
+                             >
+                            <label for="canela">Canela.</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input 
+                            type="radio"
+                            id="chocolate"
+                            value="o"
+                            name="sabor"
+                            required> 
+                            <label for="chocolate">Chocolate.</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input 
+                            type="radio"
+                            id="saditivo"
+                            value="o"
+                            name="sabor"
+                            required> 
+                            <label for="saditivo">Sem aditivo.</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox-option">
+                                <input 
+                                type="checkbox" 
+                                name="termos" 
+                                id="termos" 
+                                value="aceito"
+                                >
+                                <label for="termos">Com açúcar</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox-option">
+                                <input 
+                                type="checkbox" 
+                                name="termos" 
+                                id="termos" 
+                                value="aceito"
+                                >
+                                <label for="termos">Com chantilly</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="obs">Sujestões e Críticas: (opiconal)</label>
+                            <textarea 
+                            name="obs"
+                             id="obs"
+                             rows="4"
+                             cols="50"
+                            >
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox-option">
+                            <input 
+                            type="checkbox" 
+                            name="termos" 
+                            id="termos" 
+                            value="aceito"
+                            required>
+                            <label for="termos">Aceito os termos de uso</label>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Enviar" />
+            </fieldset>
+</body>
+</html>

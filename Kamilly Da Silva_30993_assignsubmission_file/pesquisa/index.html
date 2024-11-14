@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Padaria</a>
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Avaliação da Padaria</legend>
+
+             <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Informe seu E-mail"/> 
+                </div>
+                <div class="form-group">
+                    <label for="qualidade">Você está satisfeito(a) com a limpeza e organização da Padaria?</label>
+                    <div class="radio-group">
+                            <div class="radio-option">
+                                <input 
+                                type="radio" value="sim"
+                                id="sim"
+                                name="sim"
+                                />
+                                <label for="sim">Sim</label>
+                            </div>
+                            <div class="radio-option">
+                                <input
+                                type="radio" value="nao"
+                                id="nao"
+                                name="nao"
+                                />
+                                <label for="feminino">Não</label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="qualidade">Como você classificaria a qualidade dos nossos produtos?</label>
+                                <select id="qualidade" name="qualidade">
+                                    <option value="">Selecione uma opção:</option>
+                                    <option value="excelente">Excelente</option>
+                                    <option value="boa">Boa</option>
+                                    <option value="regular">Regular</option>
+                                    <option value="ruim">Ruim</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tempo">Qual foi o tempo de espera para ser atendido?</label>
+                                <select id="tempo" name="tempo">
+                                    <option value="">Selecione uma opção:</option>
+                                    <option value="rapido">Rápido</option>
+                                    <option value="adequado">Adequado</option>
+                                    <option value="lento">Lento</option>
+                                </select>
+                            </div>
+
+                    <div class="form-group">
+                        <label for="obs">Algo que poderíamos melhorrar?</label>
+                        <textarea
+                            id="obs"
+                            name="obs"
+                            rows="5" 
+                            cols="25" 
+                    ></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-option">
+                            <input
+                                type="checkbox"
+                                id="termos"
+                                name="termos"
+                                required
+                            />
+                            <label for="indicacao">Você indicaria a nossa padaria para outras pessoas?</label>
+                        </div>
+                    </div>
+                        
+                    <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

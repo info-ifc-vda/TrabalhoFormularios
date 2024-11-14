@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg-color: #ddd;
+    --text-color: #333;
+    --nav-bg-color: #C19A6B;
+    --link-color: indigo;
+    --btn-bg-color: indigo;
+    --btn-text-color: #C19A6B;
+    --btn-bg-color-hover: purple;
+    --form-bg: white;
+    --input-bg: #C19A6B;
+}
+
+
+.dark-mode {
+    --bg-color: #ddd;
+    --text-color: #EADDCA;
+    --nav-bg-color: #6F4E37;
+    --link-color: rgb(200, 200, 201);
+    --btn-bg-color: rgb(255, 255, 255);
+    --btn-text-color: rgb(33, 34, 34);
+    --btn-bg-color-hover: #EADDCA;
+    --form-bg: #6F4E37;
+    --input-bg: #EADDCA;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgb(255, 255, 255);
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    color: #EADDCA;
+}
+
+#dark-mode-botao {
+    float: right;
+    background-color: #6F4E37;
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    --bnt--text-color: #EADDCA;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-botao:hover {
+    background-color: #C19A6B;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+}
+
+fieldset {
+    border: 1px solid var(--input-bg);
+    padding: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    background-color: var(--input-bg);
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ddc;
+    color: var(--text-color);
+}
+
+.radio-option,
+.checkbox-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    background-color: var(--input-bg);
+    color: #6F4E37;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}

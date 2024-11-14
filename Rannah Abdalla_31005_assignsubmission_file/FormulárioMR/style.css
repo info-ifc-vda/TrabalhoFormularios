@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --text-color: 	#444;             
+    --background-color: #ffffff;      
+    --nav-background-color: #A9A9A9; 
+    --link-color: #ffffff;        
+    --btn-bg-color: #808080;   
+    --btn-text-color: #f4f4f4;         
+    --btn-bg-color-hover: #444;      
+    --form-bg: #fff;                
+    --input-bg: #fff;              
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    line-height: 1.6;                  
+    color: var(--text-color);     
+    background-color: var(--background-color); 
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    color: var(--link-color);                     
+    padding: 16px;                                
+    overflow: hidden;                           
+}
+
+
+nav a.logo {
+    float: left;             
+    font-size: 27px;                
+    text-decoration: none;           
+    color: var(--link-color);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}

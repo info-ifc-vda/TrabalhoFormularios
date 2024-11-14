@@ -1,0 +1,69 @@
+<!--O tema que escolhemos é um restaurante de bolo e
+com o formulário pedimos ao usuário para ele nos dar sugestões de melhorias
+e avaliar nosso atendimento ,
+usamos HTML para fazer o corpo do formulário onde pedimos algumas
+informações da pessoa, as sugestões e avaliações, com CSS estilizamos a
+página, mudamos as cores que vão ser alteradas do modo dark e com Javascript
+adicionamos um botão para alterar a página para modo claro e escuro e para
+enviar as respostas do usuário para outra página e agradecer por ela responder
+o formulário.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa-Atividade Avaliativa</title>
+    <LINK REL="ICON" HREF="images.jfif" TYPE="IMAGE/X-ICON">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Bolos da Julia e Lívia</a>
+        <a id="dark-mode-botao">Dark/Light</a>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Satisfação do Restaurante:</legend>
+               <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Informe seu Nome" /> 
+               </div>
+               <div class="form-group">
+                <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(49) 99999-9999"
+                        pattern="\(\d2)\s\d{4,5}-\d{4}" />
+               </div>
+               <div class="form-group">
+                        <label for="sabores">Qual novo sabor de bolo você gostaria?</label>
+                        <select id="sabores" name="sabores" required >
+                            <option value="">Selecione a opção:</option>
+                            <option value="redvelvet">Red Velvet</option>
+                            <option value="limao">Limão</option>
+                            <option value="trufademaracujá">Trufa de Maracujá</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="frequencia">Com que frequência vem ao nosso restaurante?</label>
+                        <input type="text" name="frequencia" id="frequencia" /> 
+                    </div>
+                    <div class="form-group">
+                        <label for="obs">Sugestões de Melhorias:</label>
+                        <textarea 
+                        name="obs"
+                         id="obs"
+                         rows="5" 
+                         cols="40"
+                         required
+                        ></textarea>
+                    </div>
+                
+
+                <input type="submit" value="Enviar" />
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* o que significa que o width e height do elemento se aplica apenas ao conteúdo, e o paddinge borderaumenta o tamanho total do elemento. Com border-box, o widthe heightinclui o paddinge border, facilitando o controle e ajuste do tamanho dos elementos.   */
+}
+
+nav img.logo {
+    float: left;
+    text-decoration: none;
+    width: 40px;
+    padding: 5px;
+    margin: 9px;
+}
+
+
+
+:root {
+    --text-color: #000000;
+    --background-color: #fff7f7;
+    --nav-background-color: #FFE2E2;
+    --link-color: #333;
+    --btn-bg-color: #e4d9d9;
+    --btn-text-color: rgb(0, 0, 0);
+    --btn-bg-color-hover: #FFC7C7;
+    --form-bg: #fff;
+    --input-bg: #fff;
+
+
+
+}
+
+.dark-mode {
+    --text-color: #ffffff;
+    --background-color: #ece5d8;
+    --nav-background-color: #3b3b3b;
+    --link-color: #333;
+    --btn-bg-color: #333;
+    --btn-text-color: rgb(255, 255, 255);
+    --btn-bg-color-hover: #444;
+    --form-bg: #555555;
+    --input-bg: #302c2c;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+nav {
+    background-color: var(--nav-background-color);
+    color: var(--link-color);
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 6px;
+    padding: 8px 8px;
+    cursor: pointer;
+
+}
+
+#dark-mode-botao:hover {
+    background-color: var(--btn-bg-color-hover);
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: block;
+
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1px;
+    border: 1px solid #584d4d;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--btn-bg-color-hover);
+}

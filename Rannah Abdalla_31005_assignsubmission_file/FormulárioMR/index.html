@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Rhode</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon.jpg" type="jpg">
+
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Rhode</a>
+        <a id="dark-mode-botao">Dark/Light</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+              
+                <legend>Avaliações da Marca</legend>
+                <div class="form-group">
+                    <label for="nome">Nome: </label> 
+                    <input type="text" name="nome" id="nome" required placeholder="Informe seu Nome" /> 
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="email" id="email" required placeholder="Informe seu email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="nascimento">Data de Nascimento: </label>
+                    <input type="text" id="nascimento" name="nascimento" required placeholder="00/00/0000"
+                        pattern="\(\d2)\s\d{4,5}-\d{4}" />
+                </div>
+
+                <div class="form-group">
+                    <label for="pele">Tipo de pele:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input 
+                            type="radio" 
+                            id="mista"
+                            name="pele"
+                            value="m"
+                            required 
+                            checked
+                             />
+                            <label for="mista">Mista</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input
+                             type="radio"
+                             id="oleosa" 
+                             name="pele"
+                             value="o"
+                             required
+                             >
+                            <label for="oleosa">Oleosa</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input 
+                            type="radio"
+                            id="seca"
+                            value="s"
+                            name="pele"
+                            required> 
+                            <label for="seca">Seca</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="produto">Produto adquirido: </label>
+                        <select id="produto" name="produto" required >
+                            <option value="">Selecione o produto</option>
+                            <option value="blush">Pocket Blush</option>
+                            <option value="cream">Barrier Restore Cream</option>
+                            <option value="refresh">Pineapple Refresh</option>
+                            <option value="glazing">Glazing Milk</option>
+                            <option value="tint">Peptide Lip Tint</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nota">Nota do Produto:</label>
+                        <select id="nota" name="nota" required >
+                            <option value="">Selecione a nota</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reacao">Como sua pele reagiu ao produto?</label>
+                        <input type="text" name="reacao" id="reacao" required placeholder="Descreva sua experiência" />
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="review">Review da Marca:</label>
+                        <select id="review" name="review" required >
+                            <option value="">Selecione seu nível de satisfação</option>
+                            <option value="pessimo">Péssimo</option>
+                            <option value="ruim">Ruim</option>
+                            <option value="aceitavel">Aceitável</option>
+                            <option value="bom">Bom</option>
+                            <option value="otimo">Ótimo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sugs">Sugestões para a Marca:</label>
+                        <textarea 
+                        name="sugs"
+                         id="sugs"
+                         rows="3" 
+                         cols="35"
+                        >
+                        </textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" 
+                            name="termos" 
+                            id="termos" 
+                            value="aceito"
+                            required>
+                            <label for="termos">Aceito os termos de uso</label>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Enviar" />
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

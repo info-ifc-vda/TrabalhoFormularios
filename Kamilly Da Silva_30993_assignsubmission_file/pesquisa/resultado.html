@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', carregarDados)
+    
+    function carregarDados() {
+        //pego do banco
+        var banco = localStorage.getItem('dados')
+
+        //coverto para objeto
+        banco = JSON.parse(banco)
+        console.log(banco)
+    
+        
+        var secao = document.querySelector('#dados')
+        var pre = document.createElement('pre')
+        pre.textContent = JSON.stringify(banco, null, 2)
+        secao.appendChild(pre)
+
+        //adicionar cada elemento numa lista todos os itens
+
+        for (var item in dados) {
+            var li = document.createElement('li')
+            li.textContent = item + ': ' + dados[item]
+            ul.appendChild(li)
+        }
+
+
+}
+    </script>
+
+</head>
+<body>
+    <h1>Agradeçemos a sua visita!</h1>
+    <p>É uma alegria imensa para nós receber você em nossa padaria! Trabalhamos com carinho e dedicação para trazer os melhores sabores, sempre fresquinhos e feitos com os melhores ingredientes. Esperamos que tenha aproveitado cada pedacinho!</p>
+    <p>Seja com um pão quentinho, um doce para adoçar o dia ou aquele café especial, estamos aqui para tornar sua experiência única e deliciosa. Agradecemos sua confiança e preferência. Você faz parte da nossa história, e é por você que buscamos melhorar a cada dia!</p>
+    <h5>Volte sempre e sinta-se em casa</h5>
+    <h3>Com carinho Padaria Gostosura!</h3>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação Escolar</title>
+</head>
+<body>
+    <nav>
+        <img src="imgs/ifc-logo.png" class="logo">
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+
+    <main>
+        <form>
+            <div class="title">
+                <h2>Avaliação dos Professores do Instututo Federal</h2>
+                <p>Esta avaliação é feita para que os discentes comentar sobre a didática dos professores e deixarem a sua opinião sobre os mesmos.</p>
+            </div>
+            <fieldset class="box" id="texto">
+                <div class="form-group">
+                    <label for="nome" class="label">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="campus" class="label">Campus:</label>
+                    <input type="text" name="campus" id="campus" placeholder="Digite o campus que você estuda" required>
+                </div>
+                <div class="form-group">
+                    <label for="e-mail" class="label">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </div>
+            </fieldset>
+            <fieldset class="box">
+                <div class="form-group">
+                    <label for="genero" id="label-genero">Gênero: </label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="m" id="masculino" name="genero" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="radio-group"> 
+                            <input type="radio" value="f" id="feminino" name="genero" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" value="o" name="genero" id="outro" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="box">
+                <div class="form-group">
+                    <label for="obs" class="label">O que você acha da didática dos professores?</label>
+                    <textarea name="obs" id="dida" rows="5" cols="50" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="box">
+                <div class="form-group">
+                    <label for="obs" class="label">Você tem conseguido acompanhar o rítmo dos professores? Comente.</label>
+                    <textarea name="obs" id="acompanhar" rows="5" cols="50" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="box">
+                <div class="form-group">
+                    <label for="obs" class="label">Os docentes tem atendido você adequadamente? Comente.</label>
+                    <textarea name="obs" id="adequadamente" rows="5" cols="50" required></textarea>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos de uso</label>
+                </div>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Formulario</title>
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Cafeteria</a>
+        <a id="dark-mode-botao">Dark/Light</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Avalie a cafeteria</legend>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="informe seu nome" />
+                </div>
+                <div class="form-group">
+                    <label for="dv">Data da visita</label>
+                    <input type="date" id="dv" name="dv" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="av">Avaliação:</label>
+                    <textarea name="av" id="av" rows="5" cols="50" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="nt">Sua nota:</label>
+                    <div class=radio-group>
+
+
+                        <div class="radio-option">
+                            <input type="radio" name="nt" id="Ruim" value="R">
+                            <label for="Ruim">Ruim</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" name="nt" id="Bom" value="B">
+                            <label for="Bom">Bom</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" name="nt" id="Ótimo" value="O">
+                            <label for="Ótimo">Ótimo</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="rb" id="rb" required>
+                                <label for="rb">Não sou um robô</label>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h1 class="form-group" style="text-align: center; font-weight: lighter; padding-top: 10%; font-size: 25px;">
+            @arthurbgiazzoni | @guimunzlinger</h1>
+    </footer>
+</body>
+
+</html>

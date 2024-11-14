@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruan</title>
+    <link rel="stylesheet" href="resultado.css">
+    <script defer> //o defer serve pra carregar toda página html depois o java script
+        document.addEventListener('DOMContentLoaded', carregar)//depois que baixar todos os dados do formulário executa uma função de carregar
+
+        function carregar(evento) {
+            //vamos pegar os dados do formulário que estão no localStorage 
+            var dados = localStorage.getItem('dados')//usa-se o get que é de pegar os dados desse Storege
+            //Transformar os dados em objeto, os dados eram texto portanto converte novamente em objeto  
+            dados = JSON.parse(dados)
+            //mostrar os dados na tela 
+
+            //imrpime na tela um conteúdo pré formatado 
+            var pre = document.createElement('pre')
+            pre.textContent = JSON.stringify(dados, null, 2)//colocar o elemento com 2 espaços 
+            document.querySelector('#resultado').appendChild(pre)//adiciona como filho
+            //esse código armazena uma só informação , se voltarmos e preenchermos novamente os dados antigos serão descartados 
+
+
+
+            //adicionar cada item do objeto em uma lista
+            var ul = document.querySelector('ul')
+
+            /*var li = document.createElement('li')
+            li.textContent = dados.nome//adicionar um elemento ao conteúdo , ou seja, na lista vai aparecer somente o nome 
+            //dados é o meu objeto, quando quero acessar laguma propriedade dentro dele coloco . e o nome dela , neste caso é dados.nome
+            ul.appendChild(li) - faz aparecer na tela */
+            //pra não ficar repetindo essas 3 linhas pra todos os conteúdos, o que torna o código muito grande podemos usar 
+            /*um looping que irá escrever todas os elemntos na lista - FOR*/
+
+            for (var item in dados) { //pra cada elemtento que está no meu dados.. 
+                var li = document.createElement('li') //eu crio um li 
+                li.textContent = item + ': ' + dados[item] // tranformo ele em um conteúdo..
+                ul.appendChild(li) //faço um append para mostar os dados na tela
+
+                //ADICIONO O meu li como item e a faço um apeend , ou seja até terminar toda lista de dados , todos os itens de dados
+                //todos os dados em uma lista 
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="meio">
+        <h1>Sua resposta foi coletada! Obrigada por responder.</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">logotipo</a>
+        <a id="dark-mode-botao">claro/escuro</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Cadastro de Alunos</legend>
+                <div class="form-group">
+                    <label for="none">Nome:</label>
+                    <input type="text" name="nome" id="nome" required="false" placeholder="Informe seu nome"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required="false" placeholder="Informe seu email"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required="false" placeholder="Informe seu telefone">
+                </div>
+
+                <div class="form-group">
+                    <label class="selecoesstron" for="genero">Gênero:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input
+                            type="radio"
+                            id="masculino"
+                            name="genero"
+                            />
+                            <label class="selecoes" for="masculino">Masculino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input
+                            type="radio"
+                            id="feminino"
+                            name="genero"
+                            />
+                            <label class="selecoes" for="masculino">Feminino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input
+                            type="radio"
+                            id="feminino"
+                            name="genero"
+                            />
+                            <label class="selecoes" for="masculino">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecione o Curso</option>
+                        <option value="info">Informática</option>
+                        <option value="eletro">Eletroeletrônica</option>
+                        <option value="agro">Agropecuária</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="obs">Observações:</label>
+                    <textarea name="obs" id="obs" rows="5" cols="50"></textarea>
+                </div>
+
+                <input class="poggers" type="submit" value="Enviar" />
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

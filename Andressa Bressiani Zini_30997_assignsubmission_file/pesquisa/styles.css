@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --nav-background-color: rgb(245, 208, 242);
+    --link-color: #333;
+    --btn-bg-color: white;
+    --btn-text-color: #333;
+    --btn-bg-color-hover: #a8567f;
+    --form-bg: rgb(245, 230, 250);
+    --input-bg: white;
+
+
+
+}
+
+.dark-mode {
+    --text-color: #f4f4f4;
+    --background-color: #333;
+    --nav-background-color: rgb(240, 79, 178);
+    --link-color: #f4f4f4;
+    --btn-bg-color: rgb(236, 173, 212);
+    --btn-text-color: rgb(0, 0, 0);
+    --btn-bg-color-hover: #ffffff;
+    --form-bg: #333;
+    --input-bg: #333;
+    
+    
+
+}
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-botao:hover{
+    background-color: var(--btn-bg-color-hover);
+}
+body{
+    font-family: 'Edu', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+nav{
+    background-color: var(--nav-background-color);
+    color: var(--link-color);
+    padding: 16px;
+    overflow: hidden;
+
+}
+legend{
+    font-size:20px;
+    font-weight: bold;
+}
+
+nav a.logo{
+    font-family: "Edu";
+    float: left;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-botao:hover{
+    background-color: var(--btn-bg-color-hover);
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 70%;
+    margin-left: auto;
+    margin-right: AUTO;
+}
+
+fieldset{
+    padding: 20px;
+    border: 2px solid white;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea
+{
+    width: 100%;    
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"]{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--btn-bg-color-hover);
+}
+
+
+    
+

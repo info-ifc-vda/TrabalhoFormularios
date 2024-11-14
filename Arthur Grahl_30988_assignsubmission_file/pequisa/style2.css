@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color-body: aliceblue;
+    --text-color-body: black;
+    --nav-bg-color: green;
+    --btn-bg-color: rgb(47, 168, 47);
+    --btn-text-color: white;
+    --btn-bg-color-hover: darkgreen;
+    --bg-color-box: white;
+}
+
+.dark-mode{
+    --bg-color-body: gray;
+    --text-color-body: white;
+    --nav-bg-color: black;
+    --btn-bg-color: gray;
+    --btn-text-color: lightgray;
+    --btn-bg-color-hover: black;
+    --bg-color-box: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: var(--bg-color-body);
+    color: var(--text-color-body);
+}
+
+nav{
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #333;
+}
+
+.logo{
+    float: left;
+    width: 25%;
+}
+
+#dark-mode-botao{
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    margin-top: 3%;
+}
+
+#dark-mode-botao:hover{
+    background-color: var(--btn-bg-color-hover);
+}

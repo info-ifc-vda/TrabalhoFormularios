@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gustavo Lima e Gabriel Berte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Restaurante G&G</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="5370157.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação do Restaurante G&G</h1>
+        <button id="toggleMode">Mudar para o Modo Escuro</button>
+        <form id="evaluationForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+<Br>
+
+            <label>Como você avaliaria nosso restaurante?</label>
+            <div class="radar">
+                <input type="radio" id="excellent" name="rating" value="excellent" required>
+                <label for="excellent">Excelente</label>
+
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Bom</label>
+
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Médio</label>
+
+                <input type="radio" id="terrible" name="rating" value="terrible">
+                <label for="terrible">Péssimo</label>
+            </div>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" rows="3" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

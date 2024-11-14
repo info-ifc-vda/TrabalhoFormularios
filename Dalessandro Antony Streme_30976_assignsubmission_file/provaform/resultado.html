@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriptionn" content="Formulário de Desenvolvedor de Software">
+    <meta name="keywords" content="Formulario, desenvolvedor, software">
+    <meta name="author" content="Dalessandro e GUstavo Gugel">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="app.js">
+
+    <title>Resultado/title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer>
+        document.addEventListener('DOMContentLoad', carregarDados)
+
+        function carregarDados() {
+            //Pego do banco
+            var banco = localStorage.getItem('dados')
+            //Converto para objeto
+            banco = JSON.parse(banco)
+            //Pego minha section id = 'dados'
+            var secao = document.querySelector('#dados')
+            //Crio um elemento do tipo <pre>
+            var pre = document.createElement('pre')
+            //Adiciono o texto do elemento
+            pre.textContent = JSON.stringify(banco, null, 2)
+            //Adiciono o <pre> na <section>
+            secao.appendChild(pre)
+        }
+    </script>
+    <title>Resultado</title>
+</head>

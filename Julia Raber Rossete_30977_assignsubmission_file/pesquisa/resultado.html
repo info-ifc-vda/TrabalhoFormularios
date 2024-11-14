@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="estilo.css">
+    <LINK REL="ICON" HREF="images.jfif" TYPE="IMAGE/X-ICON">
+    <script defer> 
+        document.addEventListener('DOMContentLoaded', carregar)
+
+        function carregar(evento){
+            
+            var dados = localStorage.getItem('dados')
+            dados = JSON.parse(dados)
+           
+            
+            var pre = document.createElement('pre')
+            pre.textContent = JSON.stringify(dados, null, 2) 
+            document.querySelector('#resultado').appendChild(pre)
+           
+           
+           
+            var ul = document.querySelector('ul')
+            
+           
+
+
+           
+
+           for (var item in dados) {
+            var li = document.createElement('li')
+            li.textContent = item + ': ' + dados[item]
+            ul.appendChild(li)
+           }
+
+        }
+
+    </script>
+</head>
+<body>    
+    <h1>Obrigado por participar da nossa pesquisa!</h1>
+    <img src="images.jfif" alt="bolinho">
+
+</body>
+</html>

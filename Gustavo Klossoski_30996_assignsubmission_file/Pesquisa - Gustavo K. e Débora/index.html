@@ -1,0 +1,167 @@
+<!--trabalho baseado em uma (hipotética) pesquisa sobre gosto literário e leitura-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Klossoski e Débora Lopes"> <!-- nome dos autores da página web-->
+    <link rel="stylesheet" href="style.css"> <!--link para o css--> 
+    <script src="script.js" defer></script> <!--link para o javascript-->
+    <title>Pesquisa Literária</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Livros Favoritos</a>
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Livro Favorito</legend>
+                <div class="form-group"> <!--torna obrigatório o nome--> 
+                    <label for="nome">Nome :</label>
+                    <input 
+                    type="text" 
+                    id="nome" 
+                    name="nome" 
+                    required 
+                    placeholder="Informe seu Nome" />
+                </div>
+                <div class="form-group"> <!--torna obrigatório o email--> 
+                    <label for="email">E-mail :</label>
+                    <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="Informe seu E-mail" />
+                </div>
+                <div class="form-group"> <!--torna obrigatório o telefone--> 
+                    <label for="telefone">Telefone :</label>
+                    <input 
+                    type="tel" 
+                    id="telefone" 
+                    name="telefone" 
+                    required
+                    placeholder="Informe seu Número de Telefone" />
+                </div>
+                <div class="form-group"> <!--torna obrigatório a senha--> 
+                    <label for="senha">Senha :</label>
+                    <input 
+                    type="text" 
+                    id="senha" 
+                    name="senha" 
+                    required 
+                    placeholder="Informe sua senha" />
+                </div>
+                <div class="form-group"> <!--a adição do gênero é opcional--> 
+                    <label for="genero">Gênero :</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input 
+                            type="radio" 
+                            value="M" 
+                            id="masculino" 
+                            name="genero" />
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input
+                            type="radio" 
+                            value="F" 
+                            id="feminino" 
+                            name="genero" />
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input 
+                            type="radio" 
+                            value="O" 
+                            id="outro" 
+                            name="genero" />
+                            <label for="outro">Outros</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group"> <!--torna obrigatório a adição de um livro--> 
+                    <label for="livro">Qual o seu livro favorito ?</label>
+                    <input 
+                    type="text" 
+                    id="livro" 
+                    name="livro" 
+                    required 
+                    placeholder="Informe seu livro favorito" />
+                </div>
+                <div class="form-group"> <!--torna obrigatório a adição do autor--> 
+                    <label for="autor">Qual o autor do livro ?</label>
+                    <input 
+                    type="text" 
+                    id="autor" 
+                    name="autor" 
+                    required 
+                    placeholder="Informe o autor do livro" />
+                </div>
+                <div class="form-group"> <!--torna obrigatório a marcação de uma opção--> 
+                    <label for="favorito">Qual o gênero do livro ?</label>
+                    <select 
+                    name="favorito" 
+                    id="generoFavorito">
+                        <option value="">Selecione o gênero</option>
+                        <option value="terror">Terror</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="drama">Drama</option>
+                        <option value="romance">Romance</option>
+                        <option value="suspense">Suspense</option>
+                        <option value="ficcao">Ficção</option>
+                        <option value="distopia">Distopia</option>
+                        <option value="poema/poesia">Poema / Poesia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nota">Qual a sua nota para o livro ?</label>
+                    <select 
+                    name="nota" 
+                    id="notalivro"> <!--torna obrigatório a marcação de uma opção-->
+                        <option value="">Selecione a nota</option>
+                        <option value="5">5 estrelas</option>
+                        <option value="4.5">4.5 estrelas</option>
+                        <option value="4">4 estrelas</option>
+                        <option value="3.5">3.5 estrelas</option>
+                        <option value="3">3 estrelas</option>
+                        <option value="2.5">2.5 estrelas</option>
+                        <option value="2">2 estrelas</option>
+                        <option value="1.5">1.5 estrelas</option>
+                        <option value="1">1 estrela</option>
+                        <option value="0.5">0.5 estrela</option>
+                        <option value="0">0 estrela</option>
+                    </select>
+                </div>
+                <div class="form-group"> <!--é opcional--> 
+                    <label for="obs">Porque você gosta desse livro ?</label>
+                    <textarea 
+                    id="obs" 
+                    name="obs" 
+                    rows="5" 
+                    cols="50">
+                    </textarea>
+                </div>
+                <div class="form-group"> <!--validação dos termos--> 
+                    <div class="checkbox-option">
+                        <input 
+                        type="checkbox" 
+                        id="termos" 
+                        name="termos" 
+                        required />
+                        <label for="termos">Aceito os termos de uso</label>
+                    </div>
+                </div>
+                <input 
+                type="submit" 
+                value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

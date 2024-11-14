@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="white">
+    <nav>
+        <a href="" class="logo">Livraria Virtual</a>
+        <a id="dark-mode-botao">Claro/Escuro</a>
+    </nav>
+    <h1>Obrigado por responder nosso formulário!!</h1>
+    <div id="resultado"><p>Esses são os dados que você cadastrou:</p></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregar)
+        function carregar(evento) {
+            //pegar o banco de dados
+            var banco = localStorage.getItem('banco')
+            //converter o texto em objeto
+            var dados = JSON.parse(banco)
+            console.log(dados);
+            //pegar a div
+            var div = document.querySelector('#resultado')
+            //criar um elemento <pre>
+            var pre =document.createElement('pre')
+            pre.textContent = JSON.stringify(dados, null, 2)
+            //adicionar o <pre> na <div>
+                div.appendChild(pre)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="" class="logo">Livraria Virtual</a>
+        <a id="dark-mode-botao">Claro/Escuro</a>
+    </nav>
+    <h1>O que somos?</h1>
+    <div class="p"><p>Trouxemos este formulário em busca de saber sobre a prática da leitura da comunidade, e também buscar a concientização do beneficío de ler livros.</p></div>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Pesquisa de Leitura</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu Nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Informe seu E-mail" />
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Idade</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input
+                            type="radio"
+                            value="crianca"
+                            id="criaca"
+                            name="idade"
+                            required />
+                            <label for="masculino">Menor que 12</label>
+                        </div>
+                    </div>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio"
+                            value="adolescente"
+                            id="adolescente"
+                            name="idade"
+                            required />
+                            <label for="Feminino">12 à 18</label>
+                        </div>
+                    </div>
+                    <div class="radio-option">
+                        <input
+                        type="radio"
+                        value="adulto"
+                        id="adulto"
+                        name="idade"
+                        required />
+                        <label for="Outro">Mais 18</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Você gosta de ler?</label>
+                    <input type="text" id="gostar" name="gostar" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Com que frequência você costuma ler?</label>
+                    <input type="text" id="frequencia" name="frequencia" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Onde você costuma ler?</label>
+                    <input type="text" id="local" name="local" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Você lê em que momento do dia?</label>
+                    <input type="text" id="momento" name="momento" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Qual foi seu primeiro livro?</label>
+                    <input type="text" id="primeiro" name="primeiro" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">As pessoas ao redor costumam ler em conjunto?</label>
+                    <input type="text" id="conjunto" name="conjunto" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Quanto tempo em média você demora para ler um livro?</label>
+                    <input type="text" id="tempo" name="tempo" required placeholder="Responda aqui" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Os filmes influenciam você a ler livros?</label>
+                    <input type="text" id="influenciar" name="influenciar" required placeholder="Responda aqui" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Qual o seu autor favorito?</label>
+                    <input type="text" id="autor" name="autor" required placeholder="Responda aqui" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Qual o seu livro favorito?</label>
+                    <input type="text" id="favorito" name="favorito" required placeholder="Responda aqui" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Que livro sugere para alguém que está começando a ler?</label>
+                    <input type="text" id="sugestao" name="sugestao" required placeholder="Responda aqui" />
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Qual o seu gênero de livro favorito?</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione um gênero</option>
+                        <option value="fantasia">
+                            Fantasia
+                        </option>
+                        <option value="suspense">Suspense</option>
+                        <option value="ficção">
+                            Ficção Científica
+                        </option>
+                        <option value="terror">Terror</option>
+                        <option value="romance">Romance</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="obs">Observações</label>
+                    <textarea name="obs" id="obs"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="termos" id="termos" required />
+                        <label for="termos">Aceito os termos de uso.</label>
+                    </div>
+                </div>
+            </div>
+
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo"><img src="cavalologobranco.png"></a>
+        <a id="dark-mode-botao">Dark/Light</a>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Cadastro de Enxadristas</legend>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Informe seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required placeholder="Informe seu e-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Gênero</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="masculino" name="genero" valuie="m" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="feminino" name="genero" value="f" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="outro" name="genero" value="o" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Nível de Conhecimento:</label>
+                    <select id="nivel" name="nivel" required>
+                        <option value="">Selecione</option>
+                        <option value="ini">Iniciante</option>
+                        <option value="inter">Intermediário</option>
+                        <option value="avan">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="obs">Observações:</label>
+                    <textarea name="obs" id="obs" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="rating" id="rating">
+                        <label for="termos">Tenho rating nacional</label>
+                    </div>
+                </div>
+
+                <input type="submit" value="Enviar">
+
+
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+
+</html>

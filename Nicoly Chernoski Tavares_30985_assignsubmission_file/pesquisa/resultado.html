@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muito obrigado!</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        h1{
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obrigado por participar da nossa pesquisa!</h1>
+    <section id="dados">
+        <!-- Os dados do formulário serão exibidos aqui -->
+    </section>
+
+    <script>
+        // Função para carregar e exibir os dados salvos
+        document.addEventListener('DOMContentLoaded', () => {
+            const dados = JSON.parse(localStorage.getItem('dadosPesquisa'));
+
+            // Seleciona a seção onde os dados serão exibidos
+            const secaoDados = document.getElementById('dados');
+            
+            // Cria e exibe o conteúdo com os dados do formulário
+            if (dados) {
+                const pre = document.createElement('pre');
+                pre.textContent = JSON.stringify(dados, null, 2);
+                secaoDados.appendChild(pre);
+            }
+        });
+    </script>
+</body>
+</html>

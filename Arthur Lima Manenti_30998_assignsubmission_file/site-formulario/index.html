@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias 2024</title>
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Logotipo</a>
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+    <header>
+        <h1>Tecnologia</h1>
+        <p>No mundo atual, a tecnologia tem desempenhado um papel crucial na transformação do nosso cotidiano. Desde a forma como nos comunicamos e trabalhamos. Com a rápida evolução das inovações tecnológicas, vemos melhorias constantes em eficiência, acesso à informação e conexão global.
+            Após isso responda está pesquisa para que possamos lhe ajudar.</p>
+    </header>
+    <main>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Informe seu Nome" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Informe seu E-mail" />
+            </div>
+
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required />
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta">Como você avalia o impacto da tecnologia na sua produtividade pessoal ou profissional? (Opcional)</label>
+                <input type="text" id="pergunta" name="pergunta" required />
+            </div>
+
+
+            <div class="form-group">
+                <label for="tecnologia">Tecnologias que você usa no dia a dia:</label>
+                <select name="tecnologia" id="tecnologia" required>
+                    <option value="">Selecione o tecnologia</option>
+                    <option value="info">Youtube</option>
+                    <option value="eletro">IA (inteligência Artificial)</option>
+                    <option value="agro">Streamings</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="consideracoes">considerações a mais:</label>
+                <textarea name="consideracoes" id="consideracoes" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="termos" name="termos" required />
+                    <label for="termos">Aceito os termos de uso</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
+</body>
+
+</html>

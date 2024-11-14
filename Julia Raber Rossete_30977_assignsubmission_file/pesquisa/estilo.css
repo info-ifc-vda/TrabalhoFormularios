@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+h1{
+    text-align: center;
+    font-family:"Edu";
+    font-size: 64px;
+    color:rgb(216, 93, 169);
+}
+body{
+    background-color: lavender;
+}
+img{
+   margin-left: 700px;
+  object-fit: cover;
+}

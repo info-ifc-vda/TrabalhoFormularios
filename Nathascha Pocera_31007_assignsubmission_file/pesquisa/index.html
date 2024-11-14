@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre series favoritos</title>
+    <meta name="Author" content="Nathascha Pocera e Mariane B.Flores">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Logotipo</a>
+        <a id="dark-mode-botao">Dark/Light</a>
+    </nav>
+
+    <main>
+    <form>
+        <fieldset>
+            <legend>Pesquisa sobre séries favoritos</legend>
+            <div class="form-group">
+                <label for="Nome"> Nome:</label>
+                <input type="text" name="Nome" id="Nome" required="true" placeholder="Informe seu Nome"/>
+            </div>
+            <div class="form-group">
+                <label for="Idade"> Idade: </label>
+                <input type="text" name="Idade" id="Idade" placeholder="Informe sua Idade"/>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" required="true" placeholder="Informe seu email"/>
+            </div>
+            <div class="form-group">
+                <label for="genero-filme"> Qual seu gênero cinematográfico de preferencia: </label>
+                <div class="radio-group">
+
+                    <div class="radio-option">
+                        <input type="radio" name="genero-filme" id="romance" value="r"/>
+                        <label for="romance">Romance</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="genero-filme" id="ficcao" value="f"/>
+                        <label for="ficcao">Ficção </label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="genero-filme" id="acao" value="a"/>
+                        <label for="acao">Ação</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="genero-filme" id="terror" value="t"/>
+                        <label for="terror">Terror</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="genero-filme" id="aventura" value="a"/>
+                        <label for="aventura">Aventura</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="genero-filme" id="outro" value="o"/>
+                        <label for="outro">Outro</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="serie"> Sua série favorita: </label>
+                <input type="text" name="serie" id="serie" required="true" placeholder="Informe sua série favorita"/>
+            </div>
+
+            <div class="form-group">
+                <label for="pq"> Por que esta é sua serie favorita? </label>
+                <textarea name="pq" id="pq" rows="5" cols="50s"></textarea>
+            </div>
+
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Estilos Gerais para a Página de Agradecimento */
+body.thank-you-page {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.thank-you-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Título */
+header h1 {
+    font-size: 2.5em;
+    color: #993441;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Texto de agradecimento */
+section {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Botão de Voltar */
+footer button {
+    padding: 12px 20px;
+    background-color: #993441;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #993441;
+}
+
+/* Botão de Alternar Tema */
+.theme-toggle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.theme-toggle button {
+    padding: 10px 20px;
+    background-color: #993441;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle button:hover {
+    background-color: #993441;
+}
+/* Modo Escuro */
+body.dark-theme {
+    background-color: #333;
+    color: #fff; 
+}
+
+.dark-theme .thank-you-container {
+    background: #444; 
+}
+
+.dark-theme header {
+    color: #fff; 
+}
+
+.dark-theme header p {
+    color: #fff; 
+}
+
+.dark-theme section {
+    color: #fff;
+}
+
+.dark-theme footer button {
+    background-color: #993441;
+}
+
+.dark-theme footer button:hover {
+    background-color: #993441;
+}
+
+/* Outras partes do site */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Modo Claro */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
