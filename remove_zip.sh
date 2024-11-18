@@ -1,31 +1,21 @@
-import os
+#!/bin/bash
 
-def remove_zip_files(directory):
-    """
-    Remove todos os arquivos .zip de um diretório e suas subpastas.
+# Diretório alvo
+DIR="$1"
 
-    :param directory: Caminho do diretório raiz onde os arquivos serão procurados.
-    """
-    # Verifica se o diretório existe
-    if not os.path.exists(directory):
-        print(f"Erro: O diretório '{directory}' não existe.")
-        return
+# Verifica se o diretório foi informado
+if [ -z "$DIR" ]; then
+  echo "Uso: $0 <caminho_do_diretorio>"
+  exit 1
+fi
 
-    # Percorre o diretório e suas subpastas
-    for root, _, files in os.walk(directory):
-        for file in files:
-            # Verifica se o arquivo tem extensão .zip
-            if file.lower().endswith('.zip'):
-                file_path = os.path.join(root, file)
-                try:
-                    # Remove o arquivo
-                    os.remove(file_path)
-                    print(f"Removido: {file_path}")
-                except Exception as e:
-                    print(f"Erro ao remover '{file_path}': {e}")
+# Verifica se o diretório existe
+if [ ! -d "$DIR" ]; then
+  echo "Erro: O diretório '$DIR' não existe."
+  exit 1
+fi
 
-# Caminho para o diretório raiz
-diretorio = input("Digite o caminho do diretório: ").strip()
+# Encontra e remove arquivos .zip
+find "$DIR" -type f -name "*.zip" -exec rm -v {} \;
 
-# Executa a função
-remove_zip_files(diretorio)
+echo "Todos os arquivos .zip foram removidos de $DIR e subpastas."
