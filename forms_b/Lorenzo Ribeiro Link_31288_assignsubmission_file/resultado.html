@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="dados">
+        Dados do formulário
+    </section>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', carregarDados)
+    
+    function carregarDados() {
+
+        var banco = localStorage.getItem('dados')
+
+        banco = JSON.parse(banco)
+        console.log(banco)
+    
+        
+        var secao = document.querySelector('#dados')
+        var pre = document.createElement('pre')
+        pre.textContent = JSON.stringify(banco, null, 2)
+        secao.appendChild(pre)
+}
+    </script> 
+</body>
+</html>

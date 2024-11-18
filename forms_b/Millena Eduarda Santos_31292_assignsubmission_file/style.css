@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #cce2e6;
+    --text-color: #505050;
+    --nav-bg-color: #616161;
+    --btn-bg-color: #6d8588;
+    --btn-text-color: white;
+    --form-bg: rgb(235, 235, 235);
+    --input-border: #ccc;
+    --input-bg: #f9f9f9;
+    --btn-bg: #c1c2c2;
+    --checkbox-bg: #d8f8fc;
+}
+
+.dark-mode {
+    --bg-color: #55656b;
+    --text-color: white;
+    --nav-bg-color: #444;
+    --btn-bg-color: #555;
+    --btn-text-color: white;
+    --form-bg: #333;
+    --input-border: #444;
+    --input-bg: #555;
+    --btn-bg: #777;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 50px;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--btn-text-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#dark-mode-botao {
+    cursor: pointer;
+    color: var(--btn-text-color);
+    background-color: var(--btn-bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    background-color: var(--form-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6d8588;
+}
+
+/* Estilos para o dropdown de gêneros */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--form-bg);
+    min-width: 100%;
+    z-index: 1;
+    border-radius: 6px;
+    border: 1px solid var(--input-border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content label:hover {
+    background-color: #698b8f;
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+:root {
+    --bg-color: #dd423e;
+    --text-color: black;
+    --nav-bg-color: #3e6b48;
+    --btn-bg-color: #65727a;
+    --btn-text-color: #f5f1f1;
+    --btn-bg-color-hover: #000000;
+    --input-bg: #d8ccb2;
+    --form-bg: white;
+
+}
+
+.dark-mode {
+    --bg-color: #777;
+    --text-color: #fdfdfd;
+    --nav-bg-color:black;
+    --btn-bg-color: #c78710;
+    --btn-text-color: #222;
+    --btn-bg-color-hover: #ffffff;
+    --input-bg: #444;
+    --form-bg:#222;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    line-height: 1.5;
+
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+
+
+}
+
+a.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+a#dark-mode-botao:hover {
+    background-color: var(--btn-bg-color-hover);
+
+}
+
+.logo::before{
+    content: '🍕';
+}
+
+.logo:hover {
+    background-color: #b9d7d9;
+
+}
+
+form {
+    background-color:var(--form-bg);
+    padding: 15px;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+legend {
+    font-size: 14px;
+    background-color: var(--bg-color);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+
+}
+
+form,
+fieldset {
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+.radio-option,
+.checkbox-option {
+
+    display: inline-block;
+
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.agrade{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.img{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.img img{
+    border-radius: 20px;
+    width: 400px;
+    border: 5px solid black;
+}

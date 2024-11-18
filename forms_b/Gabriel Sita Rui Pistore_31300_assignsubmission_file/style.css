@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #603808;
+    --text-color: white;
+    --nav-bg-color: #603808;
+    --btn-bg-color: #e7bc91;
+    --btn-text-color: white;
+    --btn-bg-color-hover: lightgrey;
+    --input-bg: #6f4518;
+    --form-bg: #a38068;
+    --input-text: white;
+}
+
+.dark-mode {
+    --bg-color: #a38068;
+    --text-color: white;
+    --nav-bg-color: #a38068;
+    --btn-bg-color: #6f4518;
+    --btn-text-color: white;
+    --btn-bg-color-hover: white;
+    --input-bg: #e7bc91;
+    --form-bg: #603808;
+    --input-text: #000;
+}
+
+
+
+body {
+    font-family: 'Afacad Flux';
+    background-color: var(--bg-color);
+    color: var(text-color);
+    line-height: 1.5;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+}
+
+.logo::before {
+    content: '';
+}
+
+a.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+a#dark-mode-botao:hover {
+    background-color: var(--btn-bg-color-hover);
+}
+
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+    color: var(--text-color);
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+}
+
+.radio-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-option label {
+    display: inline;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}

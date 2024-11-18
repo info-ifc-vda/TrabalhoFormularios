@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Logotipo</a>
+        <a id="dark-mode-btn">Escuro/Claro</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Avaliação de Atendimento</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Informe seu E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="Informe seu número">
+                </div>
+                <div class="form-group">
+                    <label for="avaliacao">Avaliação</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="otimo" name="avaliacao" id="otimo" required>
+                            <label for="otimo">Ótimo</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="bom" name="avaliacao" id="bom" required>
+                            <label for="bom">Bom</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="regular" name="avaliacao" id="regular" required>
+                            <label for="regular">Regular</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="ruim" name="avaliacao" id="ruim" required>
+                            <label for="ruim">Ruim</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="pessimo" name="avaliacao" id="pessimo" required>
+                            <label for="pessimo">Péssimo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sug">Sugestões de Melhorias</label>
+                    <textarea name="sug" id="obs" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Aceito os termos de uso</label>
+                    </div>
+                </div>
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <span>&copy;Thiago Molon & Vitor Toneta</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Hospital Esperança</a>
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+
+    <main>
+        <form id="formulario">
+            <fieldset>
+                <legend>Pesquisa de Satisfação</legend>
+                <h1>Informações Básicas</h1>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="Informe seu número" />
+                </div>
+
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Gênero</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="M" id="masculino" name="genero" required />
+                            <label for="masculino">Masculino</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="F" id="feminino" name="genero" required />
+                            <label for="feminino">Feminino</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="O" id="outro" name="genero" required />
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="hospital">Hospital</label>
+                    <select name="hospital" id="hospital" required>
+                        <option value="">Selecione a unidade hospitalar</option>
+                        <option value="videira">Hospital Esperança - Videira</option>
+                        <option value="veloso">Hospital Esperança - Salto Veloso</option>
+                        <option value="joacaba">Hospital Esperança - Joaçaba</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h1>Quem fez o atendimento?</h1>
+                <div class="form-group">
+                    <label for="profissional">Profissional</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="M" id="medico" name="prof" required />
+                            <label for="medico">Médico</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="E" id="enfermeira" name="prof" required />
+                            <label for="enfermeira">Enfermeira</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="O" id="outro-prof" name="prof" required />
+                            <label for="outro-prof">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome-atendente">Nome do Atendente</label>
+                    <input type="text" id="nome-atendente" name="nome-atendente" required placeholder="Informe o nome do atendente" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h1>O que achou do atendimento?</h1>
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="pessimo" name="avaliacao" value="Péssimo" required />
+                        <label for="pessimo">Péssimo</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="razoavel" name="avaliacao" value="Razoável" required />
+                        <label for="razoavel">Razoável</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="bom" name="avaliacao" value="Bom" required />
+                        <label for="bom">Bom</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="otimo" name="avaliacao" value="Ótimo" required />
+                        <label for="otimo">Ótimo</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h1>Como você avaliaria nossas instalações?</h1>
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="pessimo-local" name="avaliacao-local" value="Péssimo" required />
+                        <label for="pessimo-local">Péssimo</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="razoavel-local" name="avaliacao-local" value="Razoável" required />
+                        <label for="razoavel-local">Razoável</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="bom-local" name="avaliacao-local" value="Bom" required />
+                        <label for="bom-local">Bom</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="radio" id="otimo-local" name="avaliacao-local" value="Ótimo" required />
+                        <label for="otimo-local">Ótimo</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="obs">Observações:</label>
+                <textarea name="obs" id="obs" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="termos" name="termos" required />
+                    <label for="termos">Aceito os termos de uso</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(196, 233, 255);
+    --text-color: #222;
+    --nav--bg-color: rgb(111, 195, 221);
+    --btn-bg-color: rgb(103, 132, 211);
+    --btn-text-color: rgb(111, 195, 221);
+    --form-bg: white;
+    --input-border: #555;
+    --input-bg: rgb(196, 233, 255);
+    --btn-bg: rgb(103, 132, 211);
+}
+
+.dark-mode {
+    --bg-color: #222;
+    --text-color: white;
+    --nav--bg-color: #444;
+    --btn-bg-color: #999;
+    --btn-text-color: #fff;
+    --form-bg: #222;
+    --input-border: #555;
+    --input-bg: #444;
+    --btn-bg: #777;
+}
+
+body {
+    font-family: 'Poppins';
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav--bg-color);
+    padding: 16px;
+    overflow: hidden;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(111, 195, 221);
+    color: white;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+.radio-option,
+.checkbox-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+}
+

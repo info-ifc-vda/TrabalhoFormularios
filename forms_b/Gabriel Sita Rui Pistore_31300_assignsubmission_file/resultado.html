@@ -1,0 +1,54 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+
+<body>
+    <h1>Obrigado por se cadastrar no site!!!!!!!!</h1>
+    
+    <ul></ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregar)
+        function carregar(evento) {
+
+            var banco = localStorage.getItem('banco')
+
+            var dados = JSON.parse(banco)
+            console.log(dados)
+
+
+            var div = document.querySelector('#resultado')
+
+            var pre = document.createElement('pre')
+            pre.textContent = JSON.stringify(dados, null, 2)
+
+            div.appendChild(pre)
+
+            var li = document.createElement('li')
+            li.textContent = dados.nome
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.email
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.sexo
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.tel
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.data
+            document.querySelector('ul').appendChild(li)
+        }
+
+    </script>
+</body>
+
+</html>

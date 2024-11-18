@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Listagem dos Dados</h1>
+    <div id="resultado">
+      
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregar)
+
+        function carregar(){
+            // Pega o bando de dados
+           var banco = localStorage.getItem('dados')
+           // Converte para objeto
+           banco = JSON.parse(banco)
+           // Pega a div
+           var div = document.querySelector('div#resultado')
+           // Crie um elemento <pre>
+           var pre = document.createElement('pre')
+           // Adicione texto ao elemento <pre>
+           pre.textContent = JSON.stringify(banco, null, 2)
+           // Adiciona o elemento <pre> na <div>
+           div.appendChild(pre)
+
+           var p = document.createElement('p')
+           p.textContent =   `Nome: ${banco.nome}`
+           div.appendChild(p)
+
+           var p = document.createElement('p')
+           p.textContent = `E-mail: ${banco.email}`
+           div.appendChild(p)
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

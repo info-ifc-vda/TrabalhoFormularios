@@ -1,0 +1,140 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    :root {
+    --bg-color: #e7ae58;
+    --text-color: #ffffff;
+    --nav-bg-color: #9b9792(255, 0, 0);
+    --btn-bg-color: #6e5308;
+    --btn-text-color: #000000(229, 255, 0);
+    --form-bg: #efe1d1(255, 255, 255);
+    --input-border: #efbc98;
+    --input-bg: rgb(219, 166, 105);
+    --btn-bg: rgb(71, 140, 204);
+    }
+    
+    body {
+    font-family:'Roboto';
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    }
+    
+    nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+    clear: both;
+    }
+    
+    
+    .logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+    #dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    form {
+    background-color: var(--form-bg);
+    padding: 15px;
+    }
+    
+    fieldset{
+    padding: 10px;
+    border: 3px solid #683e00;
+    }
+    
+    legend {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #1f3968;
+    border-radius: 5px;
+    padding: 5px 10px;
+    }
+    
+    label {
+    display: block;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    }
+    
+    input[type="submit"] {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--text-color);
+    }
+    
+    input[type="submit"]:hover {
+    background-color: rgb(252, 252, 252);
+    }
+    
+    .radio-option,
+    .checkbox-option {
+    display: inline-block;
+
+    }
+    
+    
+    .radio-option label,
+    .checkbox-option label {
+    display: inline;
+    }   
+
+    .dark-mode {
+
+        --bg-color: #000000;
+        --text-color: #ffffff;
+        --nav-bg-color: rgb(85, 85, 85);
+        --btn-bg-color: rgb(243, 208, 142);
+        --btn-text-color: rgb(46, 71, 143);
+        --form-bg: #281758;
+        --input-border: #0f0d0f;
+        --input-bg: rgb(124, 81, 0);
+        --btn-bg: rgb(66, 68, 67);
+        --opacity: 
+        background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg) ;
+    }
+
+    
+
+    form {
+        height: 100%;
+        width: 100%;
+        background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg) ;
+        opacity: 0,5;
+    }
+
+    .radio-group {
+        padding-bottom: 15px;
+    }

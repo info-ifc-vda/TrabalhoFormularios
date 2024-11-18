@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa em Academias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="media/haltrere.png" type="image/png">
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="" class="logo">IBJE</a>
+        <a id="dark-mode-botao">Claro/Escuro</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Pesquisa em Academias</legend>
+
+                <div class="form-group">
+                    <label for="Nome">Nome:</label>
+                    <input type="text" id="Nome" name="Nome" required placeholder="Informe seu Nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="Informe seu E-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Peso</label>
+                    <input type="number" name="number" id="number" required placeholder="Digite seu peso">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Altura</label>
+                    <input type="number" name="number" id="number" required placeholder="Digite sua Altura">
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" required placeholder="Número de Telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Sexo</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="M" id="Masculino" name="Sexo" required>
+                            <label for="Masculino">Masculino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="F" id="Feminino" name="Sexo" required>
+                            <label for="Feminino">Feminino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="O" id="Outro" name="Sexo" required>
+                            <label for="Outro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exp">Experiência</label>
+                    <select id="exp" name="exp" required>
+                        <option value="">Quantos anos de Academia</option>
+                        <option value="-1">-1</option>
+                        <option value="1-5">1-5</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="obs">Observações</label>
+                    <textarea name="obs" id="obs"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="termos" id="termos" required>
+                        <label for="termos">Aceito os Termos de uso.</label>
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

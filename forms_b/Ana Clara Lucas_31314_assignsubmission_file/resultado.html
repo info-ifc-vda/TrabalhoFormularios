@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Dados</h1>
+    <div id="resultado"></div>
+    <ul></ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', carregar)
+        function carregar(evento) {
+            var banco = localStorage.getItem('banco')
+            var dados = JSON.parse(banco)
+            console.log(dados);
+            var div = document.querySelector('#resultado')
+            var pre = document.createElement('pre')
+            pre.textContent = JSON.stringify(dados, null, 2)
+            div.appendChild(pre)
+
+            var li = document.creatElement(li)
+            li.textContent = dados.nome
+            document.querySelector('ul').appndChild(li)
+        })
+        }
+    </script>
+</body>
+
+</html>

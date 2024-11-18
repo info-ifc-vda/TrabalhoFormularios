@@ -1,0 +1,157 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bg-color: rgb(241, 225, 195);
+        --text-color: #222;
+        --nav-bg-color: rgb(241, 225, 195);
+        --btn-bg-color: rgb(86, 86, 6);
+        --btn-text-color: orange;
+        --btn-bg-color-hover: rgb(248, 188, 77);
+        --label-color: black;
+        --legend-bg-color: black;
+        --legend-color-text: white;
+        --form-bg: rgb(250, 250, 249);
+        --input-border: #352121;
+        --input-bg: rgb(244, 225, 225);
+        --cor-do-inicio: rgb(224, 205, 170);
+        --cor-do-textoo: black;
+    }
+
+    .dark-mode {
+        --bg-color: rgb(40, 39, 39);
+        --text-color: #f2eded;
+        --nav-bg-color: rgb(51, 51, 51);
+        --btn-bg-color: rgb(70, 69, 69);
+        --btn-text-color: rgb(8, 8, 8);
+        --form-bg: rgb(28, 25, 25);
+        --input-border: #352121;
+        --input-bg: rgb(40, 35, 35);
+        --btn-bg: rgb(92, 75, 75);
+        --label-color: rgb(255, 255, 255);
+        --legend-bg-color: white;
+        --legend-color-text: black;
+        --cor-do-inicio: rgb(20, 20, 16);
+        --cor-do-textoo: white;
+    }
+
+    body {
+        font-family: 'Barlow', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.5;
+    }
+
+    .inicio {
+        background-color: var(--cor-do-inicio);
+        max-width: 980px;
+        margin-bottom: 28px;
+    }
+
+    .inicio p {
+        color: var(--cor-do-textoo)
+         
+    }
+
+    
+    nav {
+        background-color: var(--nav-bg-color);
+        padding: 16px;
+        overflow: hidden;
+    }
+
+    .logo::before {
+        content: '🎭'
+    }
+
+    a.logo {
+        float: left;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    a#dark-mode-botao {
+        float: right;
+        background-color: var(--btn-bg-color);
+        color: var(--btn-text-color);
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    a#dark-mode-botao:hover {
+        background-color: var(--btn-bg-color-hover)
+    }
+
+    form {
+        background-color: var(--form-bg);
+        padding: 15px;
+
+    }
+
+    fieldset {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    legend {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: var(--legend-bg-color);
+        color: var(--legend-color-text);
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        color: var(--label-color)
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 1px solid var(--input-border);
+        border-radius: 4px;
+        font-size: 14px;
+        background-color: var(--input-bg);
+        color: var(--text-color);
+    }
+
+    input[type="submit"] {
+        background-color: var(--btn-bg);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        color: var(--text-color);
+        font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+        background-color: rgb(245, 193, 83);
+    }
+
+    .radio-option,
+    .checkbox-option {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .radio-option label,
+    .checkbox-option label {
+        display: inline-block;
+    }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="agredecimento.js" defer></script>
+    <meta name="author" content="Gustavo Schweig dos Santos">
+</head>
+
+<body class="dark-mode-botao">
+    <nav>
+        <a href="#" class="logo">Logotipo</a>
+        <a id="dark-mode-botao">Claro/Escuro</a>
+
+    </nav>
+    <div class="inicio">
+        <h1>CINE VERDE</h1>
+        <h1>E AMARELO</h1>
+        <p>Cine Verde e Amarelo é um projeto que visa promover e valorizar o cinema nacional brasileiro, com foco na
+            diversidade cultural e regional do país.<br> Seu objetivo principal é dar visibilidade às produções
+            brasileiras, através de pesquisas com o público, desvendando os gêneros mais amados, se já assistiu alguma
+            Obra Nacional, e até mesmo saber a opinião do público ao vê-los.
+        </p>
+    </div>
+    <main>
+        <form>
+            <fieldset>
+                <legend>CINE VERDE E AMARELO: PESQUISA</legend>
+                <h3>Informações Gerais:</h3>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu Nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Informe seu E-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="Informe seu Telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="SEXO">Sexo</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="Masculino" id="masculino" name="sexo" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="Feminino" id="feminino" name="sexo" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" Value="Outro" id="outro" name="sexo" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Sobre o Cinema Nacional, responda à pesquisa:</h3>
+
+                <div class="form-group">
+                    <label for="escolha">Já assistiu algum filme Nacional?</label>
+                    <select name="escolha" id="escolha" required>
+                        <option value="">Escolha uma opção:</option>
+                        <option value="sim">Sim, já assisti o Cinema Nacional.</option>
+                        <option value="nao">Não, nunca assisti o Cinema Nacional.</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Gênero</label>
+                    <select name="genero" id="genero" required>
+                        <option value="">Selecione o Gênero do Filme:</option>
+                        <option value="acao">Ação</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="comedia">Comédia</option>
+                        <option value="drama">Drama</option>
+                        <option value="ficcao">Ficção</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="terror">Terror</option>
+                        <option value="romance">Romance</option>
+                        <option value="musical">Musical</option>
+                        <option value="biográfico">Biográfico</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nmfilme">Nome</label>
+                    <input type="text" id="nomedofilme" name="nomedofilme" required
+                        placeholder="Digite o Nome do Filme:" />
+                </div>
+                <div class="form-group">
+                    <label for="avaliacao">Avaliação do Filme</label>
+                    <textarea name="avaliacao" id="avaliacao" required></textarea>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="obs">Observação</label>
+                    <textarea name="obs" id="obs"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recomendacao">Recomendaria o Site?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="S" id="S" name="s" required>
+                            <label for="masculino">Sim, recomendaria.</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="S" id="S" name="s" required>
+                            <label for="feminino">Não recomendaria.</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" name="termos" value="Concordou" id="termos" required>
+                            <label for="termos">Aceito os Termos de Uso.</label>
+                        </div>
+                        <input type="submit" value="Finalizar!">
+                    </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <P>INSTITUTO FEDERAL CATARINENSE - IFC CAMPUS VIDEIRA</P>
+        <p>&copy;Desenvolvido por - Gustavo Schweig dos Santos</p>
+        <p>08/11/2024</p>
+     
+    </footer>
+</body>
+
+</html>

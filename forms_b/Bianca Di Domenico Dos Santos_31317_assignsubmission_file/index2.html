@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Obrigado por responder esse formulário!</h1>
+        <p>Entraremos em contato assim que possível</p>
+    </div>
+    <div class="resultado"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregar)
+        function carregar(evento) {
+
+         
+            var banco = localStorage.getItem('banco')
+
+            var dados = JSON.parse(banco)
+
+           
+            var div = document.querySelector('#index2')
+            
+            var pre = document.createElement('pre')
+            pre.textContent = JSON.stringify(dados, null, 2)
+           
+            div.appendChild(pre)
+
+            var li = document.createElement('li')
+            li.textContent = dados.nome
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.email
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.tel
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.data
+            document.querySelector('ul').appendChild(li)
+
+            var li = document.createElement('li')
+            li.textContent = dados.sexo
+            document.querySelector('ul').appendChild(li)
+        }
+    </script>
+</body>
+
+</html>

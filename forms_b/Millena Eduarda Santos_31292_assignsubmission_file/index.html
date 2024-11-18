@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - Filmes e Séries Preferidos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer ></script>
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="#" class="logo">Pesquisa Filmes e Séries</a>
+        <a id="dark-mode-botao">Modo Escuro/Claro</a>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <form id="surveyForm">
+                <fieldset>
+                    <legend>Pesquisa sobre Filmes e Séries Preferidos</legend>
+
+                   
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Informe seu nome" />
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="Informe seu E-mail" />
+                    </div>
+
+                  
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="Informe seu telefone" />
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de Nascimento</label>
+                        <input type="date" id="dataNascimento" name="dataNascimento" required />
+                    </div>
+
+                   
+                    <div class="form-group">
+                        <label>Gêneros de Filmes e Séries Preferidos</label>
+                        <div class="dropdown">
+                            <button type="button" class="dropdown-btn">Escolha os Gêneros</button>
+                            <div class="dropdown-content">
+                                <label>
+                                    <input type="checkbox" name="generos" value="Comédia" /> Comédia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="generos" value="Romance" /> Romance
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="generos" value="Ação" /> Ação
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="generos" value="Terror" /> Terror
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="generos" value="Aventura" /> Aventura
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="generos" value="Drama" /> Drama
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <div class="form-group">
+                        <label>Como você avalia a qualidade dos filmes e séries que assiste?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="excelente" name="qualidade" value="Excelente" />
+                            <label for="excelente">Excelente</label>
+
+                            <input type="radio" id="bom" name="qualidade" value="Bom" />
+                            <label for="bom">Bom</label>
+
+                            <input type="radio" id="media" name="qualidade" value="Média" />
+                            <label for="media">Média</label>
+
+                            <input type="radio" id="ruim" name="qualidade" value="Ruim" />
+                            <label for="ruim">Ruim</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="opiniao">Opiniões ou Sugestões</label>
+                        <textarea id="opiniao" name="opiniao" rows="4" placeholder="Deixe suas sugestões ou comentários"></textarea>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="termos" name="termos" required />
+                            <label for="termos">Aceito os termos de uso</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <input type="submit" value="Enviar Pesquisa" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

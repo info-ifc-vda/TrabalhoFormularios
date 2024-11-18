@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulários</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scripti.js" defer></script>
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="logo">Cafeteria do Pistore</a>
+		<a id="dark-mode-botao">Escuro/Claro</a>
+	</nav>
+
+	<main>
+		<form>
+			<fieldset>
+				<legend>Cadastro de cliente</legend>
+
+				<div class="form-group">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" required placeholder="Informe seu Nome" />
+				</div>
+
+				<div class="form-group">
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" required placeholder="Informe seu E-mail" />
+				</div>
+
+				<div class="form-group">
+					<label for="tel">Telefone:</label>
+					<input type="tel" id="tel" name="tel" required placeholder="Informe seu Número" />
+				</div>
+
+				<div class="form-group">
+					<label for="data-nascimento">Data de Nascimento</label>
+					<input type="date" id="data-nascimento" name="data-nascimento" required />
+				</div>
+
+				<div class="form-group">
+					<label for="Café">Preferencia de café:</label>
+					<div class="radio-group">
+						<div class="radio-option">
+							<input type="radio" id="Café com leite" name="café" required />
+							<label for="Café com leite">Café com leite</label>
+						</div>
+						<div class="radio-option">
+							<input type="radio" id="Café puro" name="café" required />
+							<label for="Café puro">Café puro</label>
+						</div>
+						<div class="radio-option">
+							<input type="radio" id="outro" name="café" required />
+							<label for="outro">outro</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="Cidade">Cidade:</label>
+					<select name="curso" id="curso" required>
+						<option value="">Selecione a cidade</option>
+						<option value="info">Videira</option>
+						<option value="eletro">Campos novos</option>
+						<option value="agro">Arroio trinta</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<div class="checkbox-option">
+						<label for="obs">Observações:</label>
+						<textarea name="obs" id="obs" rows="4" cols="50"></textarea>
+
+					</div>
+
+				</div>
+				<div class="form-group">
+					<input type="checkbox" id="termos" name="termos" required />
+					<label for="termos">Aceito os termos de uso</label>
+				</div>
+
+				<input type="submit" value="Cadastrar">
+			</fieldset>
+		</form>
+	</main>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <a href="" class="logo">Cadastro</a>
+        <a id="dark-mode-botao">Claro/Escuro</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Cadastro de Leitor</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu Nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Informe seu E-mail" />
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" required placeholder="Número do Telefone" />
+                </div>
+
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Sexo</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="m" id="masculino" name="sexo" required />
+                            <label for="masculino">Masculino</label>
+                        </div>
+                    </div>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="f" id="feminino" name="sexo" required />
+                            <label for="Feminino">Feminino</label>
+                        </div>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" value="o" id="outro" name="sexo" required />
+                        <label for="Outro">Outro</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero-li">Gênero literário favorito</label>
+                    <select id="genero-li" name="genero-li" required>
+                        <option value="">Selecione o Gênero</option>
+                        <option value="fanta">Fantasia</option>
+                        <option value="roma">Romance</option>
+                        <option value="roma poli">Romance policial</option>
+                        <option value="fic">Ficção</option>
+                        <option value="cie">Ciência</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Informe sua cidade</label>
+                    <textarea type="cidade" id="cidade" name="cidade" required placeholder="Informe sua Cidade"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="obs">Nos conte mais sobre você!</label>
+                    <textarea name="obs" id="obs"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="termos" id="termos" required />
+                        <label for="termos">Aceito os termos de uso.</label>
+                    </div>
+                </div>
+            </div>
+
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+
+</html>

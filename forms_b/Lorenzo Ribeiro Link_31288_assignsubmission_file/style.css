@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(231, 210, 185);
+    --text-color: rgb(73, 70, 70);
+    --nav-bg-color: rgba(146, 71, 71, 0.64);
+    --btn-bg-color: rgba(146, 71, 71, 0.64);
+    --btn-text-color: rgb(73, 70, 70);
+    --form-bg: rgb(233, 197, 154);
+    --input-border: black;
+    --input-bg: rgb(255, 255, 255);
+    --input-bg-enviar: rgba(146, 71, 71, 0.64);
+    --input-submit: black;
+    --btn-bg: rgba(146, 71, 71, 0.64);
+}
+
+body {
+    font-family: 'Protest Strike' ;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+nav{
+    background-color: var(--nav-bg-color);
+    padding: 14px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dark-mode-botao{
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.dark-mode {
+    --bg-color:#e4e2e2;
+    --text-color:#e4e2e2;
+    --nav-bg-color: rgb(77, 77, 77);
+    --link-color:rgb(200, 200, 201);
+    --btn-bg-color:rgb(255, 255, 255);
+    --btn-text-color:rgb(33, 34, 34);
+    --btn-bg-color-hover:rgb(90, 89, 90);
+    --form-bg:#080808;
+    --input-bg:rgb(131, 131, 131);
+    --input-bg-enviar: rgb(77, 77, 77)
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+
+}
+
+fieldset{
+    padding: 10px;
+    border: 1px solid #838383;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgba(146, 71, 71, 0.64);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"]
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"] {
+    background-color: var(--input-bg-enviar);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--input-submit);
+    cursor: pointer;
+}

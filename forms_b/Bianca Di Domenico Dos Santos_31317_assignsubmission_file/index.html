@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa Sobre Saúde Bucal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="dark-mode">
+    <nav>
+      <a href="#" class="logo">Logotipo</a>
+      <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+
+    <div class="container">
+      <h1>Pesquisa Sobre Saúde Bucal</h1>
+      <p>Preencha o formulário abaixo para sabermos como lhe ajudar</p>
+      <form id="satisfactionForm">
+        <label for="nome">Nome (obrigatório):</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="data">Data de Nascimento</label>
+        <input type="date" id="datanascimento" name="datanascimento" />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="frequencia">Quantas vezes escova os dentes ao dia?</label>
+        <select name="frequencia" id="frequencia">
+          <option value="">selecione a frequência</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4 ou mais">4 ou mais</option>
+        </select>
+
+        <label for="data">Data da sua Última Visita ao Dentista:</label>
+        <select name="frequencia" id="frequencia" required>
+          <option value="">Quando foi sua última visita</option>
+          <option value="3">3 meses</option>
+          <option value="6">6 meses</option>
+          <option value="1">1 ano</option>
+          <option value="2">Mais que 1 ano</option>
+        </select>
+
+        <label>Você usa aparelho?</label>
+        <div class="btn">
+          <input type="radio" id="Não" name="aparelho" value="Não" />
+          <label for="Não">Não</label>
+
+          <input type="radio" id="Sim" name="aparelho" value="Sim" />
+          <label for="Sim">Sim</label>
+        </div>
+
+        <label for="dores"> Relate suas dores de dente aqui:</label>
+        <textarea id="dores" name="dores" rows="4" cols="50"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

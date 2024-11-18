@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-bg: #0F212B;
+    --nav-tbg: white;
+    --form-bg: #f3e9e2;
+    --input-bg: #e2ccbc;
+    --input-border: var(--nav-bg);
+    --text-color: #222;
+    --bgc: #1e303a;
+    --btn-bg: #a5a2a2;
+}
+
+.dark-mode {
+    --form-bg: #313131;
+    --input-border: #555;
+    --input-bg: #444;
+    --text-color: white;
+    --bgc: #15181a;
+    --btn-bg: #616161;
+}
+
+body {
+    background-color: var(--bgc);
+    font-family: Lato;
+    color: var(--text-color);
+}
+
+nav,
+nav a {
+    background-color: var(--nav-bg);
+    color: var(--nav-tbg);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#dark-mode-btn {
+    cursor: pointer;
+}
+
+#dark-mode-btn:hover {
+    background-color: #D0BEB4;
+    color: var(--nav-bg);
+    border-radius: 10px;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid var(--nav-bg);
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #3f494e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type=submit] {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #161618;
+    color: white;
+    cursor: pointer;
+
+}
+
+.radio-option,
+.checkbox-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #616161;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}

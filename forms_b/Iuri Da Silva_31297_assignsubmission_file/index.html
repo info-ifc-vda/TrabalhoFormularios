@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscrição futsal</title>
+    <link rel="icon" href="1165218.png">
+    <link rel="stylesheet" href="stilyle.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark-mode">
+
+    <nav>
+        <a href="#" class="logo">Futsal</a>
+        <a id="dark-mode-botao">Claro/Escuro</a>
+    </nav>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>Inscriçãos</legend>
+                
+                <div class="form-group">
+                    <label for="nome">Nome do aluno completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Endereço de E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Informe seu E-mail">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tel">Número de Telefone </label>
+                    <input type="tel" id="tel" name="tel" required placeholder="Informe seu Telefone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+                
+                
+
+                        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="posiçao">Posição em Quadra</label>
+                    <input type="text" name="posição-texto">
+                    <select name="posição" id="posiçao" required>
+                      <option value="">Selecione a posição</option>
+                      <option value="pivo">Pivo</option>
+                      <option value="ala">Ala</option>
+                      <option value="fixo">Fixo</option>
+                      <option value="gol">Goleiro</option>
+                    </select>
+                  </div>
+                  
+                <div class="form-group">
+                    <label for="experiência">
+                        Possui experiência anterior em Futsal?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="s" id="sim" name="experiência" required>
+                            <label for="sim">Sim</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="n" id="não" name="experiência" required>
+                            <label for="não">Não</label>
+                        </div>
+                    </div>    
+                <div class="form-group">
+                    <label for="time">Joga em algum time atualmente?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="s" id="sim" name="time" required>
+                            <label for="sim">Sim</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="n" id="Não" name="time" required>
+                            <label for="Não">Não</label>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nmtime"> Nome do time (se aplicável)</label>
+                    <textarea name="nmtime" id="obs" placeholder="nome do time"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="camisa">Tamanho da camiseta</label>
+                    <select name="camisa" id="camisa" required>
+                        <option value="">Selecione o tamanho</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Treinos">Está disponível para treinos regulares durante a semana?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="s" id="sim" name="treinos" required>
+                            <label for="Sim">Sim</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" value="n" id="nao" name="treinos" required>
+                            <label for="Não">Não</label>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>

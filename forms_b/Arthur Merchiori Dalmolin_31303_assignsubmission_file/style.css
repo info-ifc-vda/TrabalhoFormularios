@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    --bg-color: rgb(221, 100, 100);
+    --text-color: #222;
+    --nav-bg-color: rgb(250, 144, 144);
+    --btn-bg-color: rgb(255, 255, 255);
+    --btn-text-color: rgb(221, 100, 100);
+    --btn-bg-color-hover: rgb(255, 219, 219);
+    --input-bg: rgb(255, 255, 255);
+    --text-color: grey;
+    --form-bg: rgb(255, 255, 255);
+}
+
+.dark-mode {
+    --bg-color: rgb(59, 53, 46);
+    --text-color: #222;
+    --nav-bg-color: rgb(0, 0, 0);
+    --btn-bg-color: rgb(255, 216, 216);
+    --btn-text-color: rgb(115, 115, 115);
+    --btn-bg-color-hover: rgb(77, 77, 77);
+    --input-bg: rgb(78, 78, 78);
+    --text-color: rgb(255, 255, 255);
+    --form-bg: #222;
+}
+
+body {
+    font-family: 'montserrat',sans-serif ;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+}
+
+.logo::before {
+    content: '📚';
+}
+
+a.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+a#dark-mode-botao:hover {
+    background-color: var(--btn-bg-color-hover);
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid rgb(88, 31, 31);
+
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(255, 179, 179);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+
+}
+
+.radio-option,
+.checkbox-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Inscrição</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Caffè Lammon</a>
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Inscrição de emprego</legend>
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Informe seu E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="Informe seu número">
+                </div>
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Gênero</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" value="masculino" name="genero" id="masculino" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="feminino" name="genero" id="feminino" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" value="outro" name="genero" id="outro" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="area">Área</label>
+                    <select name="area" id="area" required>
+                        <option value="">Selecione a sua Área</option>
+                        <option value="aten">Atendente</option>
+                        <option value="cozi">Cozinherio</option>
+                        <option value="gar">Garçom</option>
+                        <option value="fazi">Fazineiro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="habi">Habilidades na área</label>
+                    <textarea name="habi" id="habi" rows="4" cols="50" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="moti">Motivos para a inscrição</label>
+                    <textarea name="moti" id="moti" rows="4" cols="50" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="obs">Observações</label>
+                    <textarea name="obs" id="moti" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Aceito os termos</label>
+                    </div>
+                </div>
+                <input type="submit" value="Finalizar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

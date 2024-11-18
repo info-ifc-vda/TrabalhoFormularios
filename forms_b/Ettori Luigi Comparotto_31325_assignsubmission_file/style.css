@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #789048;
+    --text-color: #222;
+    --nav-bg-color: #607848;
+    --btn-bg-color: #a14016;
+    --btn-text-color: black;
+    --form-bg: #f0f0d8;
+    --input-border: #c0d860;
+    --input-bg: #ffffe2;
+    --btn-bg: #c0d860;
+    --fildset: #c0d860;
+    --legend: #a14016;
+}
+
+
+.dark-mode {
+    --bg-color: #222;
+    --text-color: white;
+    --nav-bg-color: #444;
+    --btn-bg-color: #999;
+    --btn-text-color: #fff;
+    --form-bg: #222;
+    --input-border: #555;
+    --input-bg: #444;
+    --btn-bg: #777;
+    --fildset: #999;
+    --legend: #999;
+}
+body {
+    font-family: Sour Gummy;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    clear: both;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid var(--fildset);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: var(--legend);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type=submit] {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(144, 238, 144, 0.5);
+}
+
+.radio-option, .checkbox-option {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-option label, .checkbox-option label {
+    display: inline;
+}

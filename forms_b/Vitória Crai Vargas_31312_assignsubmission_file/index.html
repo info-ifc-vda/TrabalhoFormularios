@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário séries</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <form class="formulario">
+        
+    </form>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">NETFLIX</a>
+        <a id="dark-mode-botao">Escuro/Claro</a>
+    </nav>
+
+    
+ </div>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Formulário satisfação de séries da Netflix</legend>
+
+
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input 
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                        placeholder="Informe o seu nome"
+                        />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Informe seu E-mail"
+                       /> 
+                </div>
+              
+                   
+                </div>
+                <div class="form-group">
+                    <label for="data que assistiu">Data que assistiu</label>
+                    <input 
+                        type="date"
+                        id="data que assi"
+                        nome="data-nascimento"
+                        required
+                    />    
+                </div>
+
+                <div class="form-group">
+                    <label for="Série">Série:</label>
+                    <select id="Série" name="Série">
+                        <option value="">Selecione a Série</option>
+                        <option value="stranger">Stranger things</option>
+                        <option value="lacasa">La casa de papel</option>
+                        <option value="outer">Outer banks</option>
+                        <option value="round">Round 6</option>
+                        <option value="Elite">Elite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Avaliaçao">Avaliação: </label>
+                    <div class="radio-group">
+                            <div class="radio-option">
+                                <input 
+                                type="radio" value="mas"
+                                id="Amei"
+                                name="Avaliação"
+                                required
+                                />
+                                <label for="Amei">Amei</label>
+                            </div>
+                            <div class="radio-option">
+                                <input
+                                type="radio" value="Gostei"
+                                id="Gostei"
+                                name="Avaliaçao"
+                                required
+                                />
+                                <label for="Gostei">Gostei</label>
+                            </div>
+                            <div class="radio-option">
+                                <input
+                                type="radio" value="Não gostei"
+                                id="Não gostei"
+                                name="Avaliaçao"
+                                required
+                                />
+                                <label for="Não gostei">Não gostei</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feed">Feedback:</label>
+                        <textarea
+                            id="obs"
+                            name="obs"
+                            rows="5" 
+                            cols="25" 
+                    ></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-option">
+                            <input
+                                type="checkbox"
+                                id="termos"
+                                name="termos"
+                                required
+                            />
+                            <label for="termos">Aceito os termos de uso</label>
+                        </div>
+                    </div>
+                        
+                    <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

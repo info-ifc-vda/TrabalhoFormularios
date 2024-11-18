@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Avaliação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Pit Stop</a>
+        <a id="dark-mode-botao">Mudar Tema</a>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Avalie nossa Pizza!!</legend>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Informe seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="Informe seu E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" required placeholder="Informe seu Telefone">
+                </div>
+                <div class="form-group">
+                    <label for="data">Data em que visitou o restaurante</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="estrela">Avaliação</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" name="estrela" id="1 estrela" value="1 estrela" required>
+                            <label for="estrela">1 estrela</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="estrela" id="2 estrela" value="2 estrela" required>
+                            <label for="estrela">2 estrelas</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="estrela" id="3 estrela" value="3 estrela" required>
+                            <label for="estrela">3 estrelas</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="estrela" id="4 estrela" value="4 estrela" required>
+                            <label for="estrela">4 estrelas</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="estrela" id="5 estrela" value="5 estrela" required>
+                            <label for="estrela">5 estrelas</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="avaliacaodescritiva">Avalie-nos com suas palavras</label>
+                    <textarea name="avaliacaodescritiva" id="avaliacaodescritiva"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="sabor">Proponha algum novo sabor!</label>
+                    <textarea name="sabor" id="sabor"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="termos" id="termos" required input />
+                        <label for="termos">Aceito os termos de uso</label>
+                    </div>
+                </div>
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

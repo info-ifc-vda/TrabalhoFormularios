@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="media/haltrere.png" type="image/png">
+    <title>Agradecimento</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #f0f0f0;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Amatic SC', cursive;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+            opacity: 0;
+            animation: fadeInText 3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInText 3s 1s ease-out forwards;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Obrigado por responder o formulário!</h1>
+        <p>Seu feedback é muito importante para nós.</p>
+    </div>
+
+</body>
+
+</html>

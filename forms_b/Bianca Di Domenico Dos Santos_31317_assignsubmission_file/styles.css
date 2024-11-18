@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* styles.css */
+body {
+    font-family: 'Hubot Sans';
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: rgb(95, 193, 250);
+    --text-color: #111;
+    --nav-bg-color: rgb(49, 175, 248);
+    --btn-bg-color: #111;
+    --btn-text-color: aliceblue;
+    --btn-bg-color-hover: #333;
+    --input-bg: aliceblue;
+    --form-bg: rgb(208, 232, 253);
+    --btn-background-color: aliceblue;
+
+}
+
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+    --nav-bg-color: rgb(0, 0, 0);
+    --btn-bg-color: rgb(4, 10, 83);
+    --btn-text-color: aliceblue;
+    --btn-bg-color-hover: rgb(24, 24, 145);
+    --input-bg: rgb(17, 23, 77);
+    --form-bg: #111;
+    --btn-background-color: rgb(70, 70, 117);
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgb(102, 102, 150);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1553da;
+
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1553da;
+    color: rgb(247, 231, 231);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2769e4;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: black;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #112;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode button {
+    background-color: #313a4d;
+    color: #e0e0e0;
+    border: 1px solid #272879;
+}
+
+body.dark-mode button {
+    background-color: #121152;
+}
+
+body.dark-mode button:hover {
+    background-color: #0f2080;
+}
+
+.btn {
+    padding: 10px;
+    display: inline-flex;
+}
+select{
+    background-color:  var(--btn-background-color);
+    border-radius: 6px;
+}
+
+.logo{
+    text-decoration: none;
+    
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
